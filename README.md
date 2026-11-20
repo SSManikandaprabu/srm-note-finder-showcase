@@ -18,6 +18,7 @@
   <img src="https://img.shields.io/badge/Express-REST%20API-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/Socket.IO-Realtime-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.IO" />
+  <img src="https://img.shields.io/badge/Argon2id-Security-10b981?style=for-the-badge&logo=shield&logoColor=white" alt="Argon2id" />
 </p>
 
 <br />
@@ -49,6 +50,7 @@ During university exam seasons, study materials across engineering departments o
 
 ### 1. 📚 Centralized Academic Hub
 - **150+ Curated Materials:** Comprehensive coverage across **Semesters 1 through 8** for B.Tech CSE and allied branches.
+- **Distraction-Free Study Viewer:** In-browser PDF.js streaming with native **⛶ Fullscreen** mode, zoom controls, and lazy-loaded Google Slides bypass rendering.
 - **Unit-Wise Breakdown:** Instant filtering for Unit 1, 2, 3, 4, 5 lecture notes, lab manuals, and previous-year question papers (PYQs).
 - **Direct Link Sharing:** Generate instant deep-links to specific subjects or individual units with one-click clipboard copying and WhatsApp sharing.
 
@@ -71,6 +73,11 @@ During university exam seasons, study materials across engineering departments o
 - **4 Visual Themes:** Cyberpunk Dark, Nordic Midnight, Emerald Scholar, and Crimson Neon.
 - **Ambient Canvas Visuals:** Interactive space backgrounds, glowing particle meshes, and minimal grid modes.
 - **Local Persistence:** Personal aesthetics synchronize seamlessly to browser storage with zero latency.
+
+### 6. 🛡️ Advanced Security & Administrative Control
+- **Argon2id Cryptographic Protection:** Admin credentials secured with OWASP RFC-9106 memory-hard Argon2id hashing and timing-attack defense.
+- **Dynamic Access Governance:** Admin switch permitting open guest community discussions or enforcing verified `@srmist.edu.in` sign-in.
+- **High-Performance MongoDB Indexing:** B-tree compound indexing guaranteeing sub-millisecond credential lookups.
 
 ---
 
@@ -130,7 +137,7 @@ flowchart TB
 | **Backend API** | **Node.js, Express** | Modular REST routes, validation, and analytics telemetry |
 | **WebSockets** | **Socket.IO** | Real-time community discussion and presence broadcasting |
 | **Database** | **MongoDB Atlas** | High-availability cloud document store with Mongoose ODM |
-| **Authentication** | **JWT & Bcrypt** | Secure OTP-verified institutional sessions and password hashing |
+| **Authentication & Crypto** | **Argon2id, JWT & Bcrypt** | OWASP memory-hard admin hashing, JWT tokens & student password encryption |
 | **Hosting** | **Vercel & Render** | Global Edge CDN for frontend and continuous containerized API |
 
 ---
@@ -143,6 +150,7 @@ flowchart TB
 ├── 8 Semesters (Full B.Tech Scope)
 ├── 75% Attendance Threshold Predictor Math
 ├── Dual-Transport (WebSocket + REST Polling Fallback)
+├── Native In-Viewer ⛶ Fullscreen Study Mode
 └── 0-Second Delay In-Browser Study Viewer
 ```
 
@@ -153,7 +161,8 @@ flowchart TB
 ```text
 srm-note-finder-showcase/
 ├── assets/
-│   └── showcase-banner.png    # High-resolution platform preview banner
+│   ├── showcase-banner.svg    # High-resolution vector platform preview banner
+│   └── showcase-banner.png    # Social fallback OpenGraph banner
 └── README.md                  # Comprehensive product showcase & specifications
 ```
 
