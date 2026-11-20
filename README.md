@@ -22,7 +22,7 @@
 
 <br />
 
-[![SRM Note Finder Showcase Banner](assets/showcase-banner.png)](https://srmnotefinder.vercel.app)
+[![SRM Note Finder Showcase Banner](assets/showcase-banner.svg)](https://srmnotefinder.vercel.app)
 
 <br />
 
